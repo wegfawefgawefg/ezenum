@@ -59,6 +59,7 @@ func IsValidTestResponseCodes(code int) bool {
 	default:
 		return false
 	}
+	return false
 }
 `
 

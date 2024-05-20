@@ -127,6 +127,7 @@ func generateEnumFile(filePath, typeName string, constants map[string]string) {
 	code += "\tdefault:\n"
 	code += "\t\treturn false\n"
 	code += "\t}\n"
+	code += "\treturn false\n"
 	code += "}\n"
 
 	err := os.WriteFile(newFilePath, []byte(code), 0644)
