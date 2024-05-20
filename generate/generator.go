@@ -111,6 +111,8 @@ func generateEnumFile(filePath, typeName string, constants map[string]string) {
 	for constant, comment := range constants {
 		comment = strings.TrimPrefix(comment, "//")
 		comment = strings.TrimSpace(comment)
+		// if there are any " in the comment, escape them
+		comment = strings.ReplaceAll(comment, "\"", "\\\"")
 		code += fmt.Sprintf("\tcase %s:\n", constant)
 		code += fmt.Sprintf("\t\treturn \"%s\"\n", comment)
 	}

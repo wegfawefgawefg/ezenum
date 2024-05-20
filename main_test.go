@@ -40,7 +40,7 @@ func (r TestResponseCodes) AsCode() int {
 func (r TestResponseCodes) GetDescription() string {
 	switch r {
 	case Ok:
-		return "OK: The request was successful, and the response contains the requested information."
+		return "OK: The \"request\" was successful, and the response contains the requested information."
 	case Continue:
 		return "Continue: The client can continue with the request."
 	case SwitchingProtocols:
