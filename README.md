@@ -1,5 +1,9 @@
+
+
 # ezenum
 golang code gen tool for ez enumz
+
+![Icon](logo/ezenum_logo_icon.png)
 
 ## How do
 1. Make an ezenum with consts like you normally would. 
