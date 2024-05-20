@@ -117,6 +117,7 @@ func generateEnumFile(filePath, typeName string, constants map[string]string) {
 	code += "\tdefault:\n"
 	code += "\t\treturn \"Unknown Response\"\n"
 	code += "\t}\n"
+	code += "\treturn \"Unknown Response\"\n"
 	code += "}\n\n"
 	code += fmt.Sprintf("func IsValid%s(code int) bool {\n", typeName)
 	code += fmt.Sprintf("\tswitch %s(code) {\n", typeName)
